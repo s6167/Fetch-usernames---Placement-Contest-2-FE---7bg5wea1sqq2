@@ -20,7 +20,7 @@ const App = () => {
  
  function changeInput(e){
    let newUrl = url;
-   if(url[url.length-1]!="/"){
+   while(newUrl[newUrl.length-1]!="/"){
      newUrl = newUrl.substring(0,newUrl.length-1)
    }
   console.log(newUrl)
